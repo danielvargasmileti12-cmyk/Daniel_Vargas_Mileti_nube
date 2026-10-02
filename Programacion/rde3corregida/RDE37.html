@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+         let numero_1 = Number(prompt("Introduzca aqui el numero"))
+         let numero_2 = Number(prompt("Introduzca aqui el numero"))
+         let operacion = prompt("Introduce aqui la operacion (+ , - , * , /)")
+         let resultado
+
+         if (operacion === "+") {
+            resultado = numero_1 + numero_2
+         } else if (operacion === "-") {
+            resultado = numero_1 - numero_2
+         } else if (operacion === "*") {
+            resultado = numero_1 * numero_2
+         } else if (operacion === "/") {
+            if (numero_2 != 0){
+            resultado = numero_1 / numero_2  
+         }else{
+            console.log(
+                "no se puede dividir entre 0 "
+            );
+            
+         }
+            
+         }else
+
+         console.log(
+            "Resultado:" + " " + resultado
+         );
+ 
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let tiempoEstacionado = Number(prompt("Introduzca aqui el tiempo que estuvo estacionado en horas "))
+        let costeEstacionamiento
+
+        if (tiempoEstacionado <= 2) {
+            costeEstacionamiento = (tiempoEstacionado * 5)
+        } else if (tiempoEstacionado <= 5) {
+            costeEstacionamiento = (tiempoEstacionado * 4)
+        } else {
+            costeEstacionamiento = 2 * 5 + 3 * 4 + (tiempoEstacionado - 5) * 3
+        }
+        console.log(
+            "El coste de su estacionamiento es de:" + " " + costeEstacionamiento + " " + " Euros"
+        );
+
+    </script>
+</body>
+
+</html>

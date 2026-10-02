@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let duracionLlamada = Number(prompt("Introduzca la duracion de la llamada en minutos"))
+    let costeLlamada
+
+    if (duracionLlamada <= 3) {
+      costeLlamada = 0
+
+    } else if (duracionLlamada <= 10) {
+      costeLlamada = (duracionLlamada - 3) * 0.50
+    } else {
+      costeLlamada = (10 - 3) * 0.50 + (duracionLlamada - 10) * 0.30
+    }
+    console.log(
+      "La Llamada te va a costar :" + " " + costeLlamada + " " + "euros"
+    );
+
+
+  </script>
+</body>
+
+</html>
