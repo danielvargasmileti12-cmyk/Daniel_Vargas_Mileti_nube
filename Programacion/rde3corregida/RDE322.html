@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+         let jugador_1 = prompt(" Jugador 1 Introduzca Piedra , Papel o tijera")
+         let jugador_2=  prompt(" Jugador 2 Introduzca Piedra , Papel o tijera")
+         const PIEDRA = "piedra"
+         const PAPEL = "papel"
+         const TIJERAS = "tijeras"
+
+         if (jugador_1 === jugador_2){
+            console.log("El resultado es Empate");
+         }else if (jugador_1 === PIEDRA && jugador_2 === TIJERAS){
+            console.log("El ganador es el jugador 1");
+        }else if (jugador_1 === PAPEL && jugador_2 === PIEDRA){
+            console.log("El ganador es el jugador 1");
+        }else if (jugador_1 === TIJERAS && jugador_2 === PAPEL){
+            console.log("El ganador es el jugador 1");
+        }else {
+            console.log("El ganador es el jugador 2");
+        }
+        </script>
+    </body>
+    </html>           
