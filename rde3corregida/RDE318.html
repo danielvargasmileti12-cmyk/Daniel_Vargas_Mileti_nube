@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let promedioAcademico = parseInt(prompt("Introduzca aqui su promedio academico"))
+        let ingresoFamiliar = Number(prompt("Introduzca aqui su ingreso familiar anual"))
+
+        if (promedioAcademico >= 8 && ingresoFamiliar < 20000) {
+            console.log(
+                "Usted recibira una beca completa"
+            );
+
+        } else if (promedioAcademico >= 8 && ingresoFamiliar > 20000) {
+            console.log(
+                "Usted recibira una beca parcial"
+            );
+
+        } else {
+            console.log(
+                "Usted no recibira beca"
+            );
+
+        }
+    </script>
+</body>
+
+</html>
